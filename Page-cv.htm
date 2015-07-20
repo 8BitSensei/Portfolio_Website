@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <meta charset="utf-8">
+        <title></title>
+        <meta name="generator" content="Responsive Web Css (www.responsivewebcss.com)" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="Stylesheet" href="Page 1.css" />
+        <link rel="Stylesheet" href="Page-cv.css" />
+        <link href='http://fonts.googleapis.com/css?family=Armata' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+       
+        <!-- Arrow icons made by Freepik from www.flaticon.com is licensed by CC BY 3.0 -->
+    </head>
+    <body>
+        <script type="text/javascript">
+            var fileNumber = Math.floor((Math.random() * 2) + 0); 
+            var body = document.getElementsByTagName('body')[0];
+            body.style.backgroundImage = 'url(img_res/bg-'+fileNumber+'.jpeg)';
+
+           function redirectToCv(){
+                    window.location.replace("Page-cv.htm");
+                }
+            function redirectToLog(){
+                    window.location.replace("Page-blog.php?search=latest");
+                }
+            function redirectToProjects(){
+                    window.location.replace("Page-projects.php?search=latest");
+                }
+            function redirectToHome(){
+                    window.location.replace("Index.html");
+                }
+
+            $(document).ready(function(){
+                $("#key-skills").click(function(){
+
+                    if ($("#key-skills-content").is(":hidden")){
+                        $("#key-skills-content").slideDown();
+                        $('#ln1').slideDown();
+                     } else {
+                        $("#key-skills-content").slideUp();
+                        $("#ln1").slideUp();
+                    }
+                    $('#ar1').toggleClass('rotated-down');
+                });
+
+                $("#work").click(function(){
+
+                    if ($("#work-content").is(":hidden")){
+                        $("#work-content").slideDown();
+                        $('#ln2').slideDown();
+                     } else {
+                        $("#work-content").slideUp();
+                        $("#ln2").slideUp();
+                    }
+                    $('#ar2').toggleClass('rotated-down');
+                });
+
+                $("#education").click(function(){
+
+                    if ($("#education-content").is(":hidden")){
+                        $("#education-content").slideDown();
+                        $('#ln3').slideDown();
+                     } else {
+                        $("#education-content").slideUp();
+                        $("#ln3").slideUp();
+                    }
+                    $('#ar3').toggleClass('rotated-down');
+                });
+
+                 $("#hobbies").click(function(){
+
+                    if ($("#hobbies-content").is(":hidden")){
+                        $("#hobbies-content").slideDown();
+                        $('#ln4').slideDown();
+                     } else {
+                        $("#hobbies-content").slideUp();
+                        $("#ln4").slideUp();
+                    }
+                    $('#ar4').toggleClass('rotated-down');
+                });
+
+            });
+
+        </script>
+        <div id='root'>            
+            <div class='box' id='box4'>
+                 <div id ='title'>
+                    <p class = 'title'>Charlie Tizzard</p>
+                </div>
+                <div class='box' id='box6'>
+                     <form method="get" action="Page-blog.php?search=latest&" id="tag">
+                        <input name="tag" type="text" size="40" placeholder="Search..." />
+                    </form>
+                    <p class='menu_item' id='item_0' onclick='redirectToCv()' >CV</p>
+                    <p class='menu_item' id='item_1' onclick='redirectToLog()' >Log</p>
+                    <p class='menu_item' id='item_2' onclick='redirectToProjects()' >Projects</p>
+                    <p class='menu_item' id='item_3' onclick='redirectToHome()' >Home</p>
+                </div>
+                <div class='box' id='box8'>
+                    <div class='content' id='personal-profile'>
+                        <b>Personal profile</b>
+                        </br>
+                        <hr class="fancy-line"></hr>
+                        I am an enthusiastic individual with a profound degree of technical skill, a passion for learning new techniques, technologies and teaching others. I have excellent training in logical problem solving, as well as working in a group towards a goal, creating enthusiasm and staying motivated to achieve important deadlines. I am currently working towards a Bachelor’s degree in Computer Science at the University of Surrey and I am currently on track to receive a high 2:1. 
+                    </div>
+                    <div class='content' id='key-skills'>
+                        <b id='skills' >Key Skills</b>
+                        <img src="img_res/arrow_ios7.png" class='arrow' id='ar1'>
+                        </br>
+                        <hr class="fancy-line" id='ln1'></hr>
+                        <div id='key-skills-content'>
+                            <div id='left'>
+                            <b>Organisation and management – 3 years</b>
+                            </br>
+                            </br>
+                            •   <b>Experience in multiple situations and work environments</b> through 3 years of prior jobs and academic work.
+                            </br>
+                            •   <b>Skilled use of project management and organisational software;</b> in these environments I’ve used multiple software packages such as Dropbox and GitHub, specifically GitHub – Source Tree.  I’ve also had training in the use of Gant chats for project management.
+                            </br>
+                            •   <b>Professional training in project management;</b>   
+                            I have had training in both Agile and Waterfall project management methodology, as well as hybrid techniques. 
+                            </br>
+                            </br>
+                            <b>Graphic design – 5 years</b>
+                            </br>
+                            </br>
+                            •   <b>Training in design software packages</b> such as Photoshop CS3 and up as well as 3D modelling software Blender and Maya 3D
+                            </br>
+                            •   <b>3D animation and Flash animation/programming</b> training at Bournemouth College.
+                            </br>
+                            •   <b>Experience applying graphic design to real world marketing</b> for events such as music and societal events.
+
+                            </div>
+                            <div id='right'>
+                            <b>Web Development – 5 years</b>
+                            </br>
+                            </br>
+                            •   <b>Superb experience and training in web development</b> including front end technologies such as HTML5, CSS and JavaScript/JQuery. I’m also versed in server-side development and management with PHP, MySQL and XAMPP.
+                            </br>
+                            •   <b>Experience in professional standard IDEs</b> such as Notepad++ and Sublime as well as prior work in data entry and server management.
+                            </br>
+                            </br>
+                            <b>Software engineering – 5 years</b>
+                            </br>
+                            </br>
+                            •   <b>Experience programming in a windows environment with both Java and C++</b> to create projects such as games and encrypted communication clients
+                            </br>
+                            •   <b>Experience developing for Android through personal development,</b> work experience at 3Sided Cube development studio and mobile computing modules at university.
+                            </br>
+                            •   <b>Understanding of professional IDEs such as Eclipse with WindowBuilder</b>, Android studio and Microsoft Visual studio 2010
+
+                            </div>
+                        </div>
+                    </div>
+                    <div id='work-education'>
+                        <div class='content' id='work'>
+                            <b>Work history</b>
+                            <img src="img_res/arrow_ios7.png" class='arrow' id='ar2'>
+                            </br>
+                            <hr class="fancy-line"  id ='ln2'></hr>
+                            <div id='work-content'>
+                                •   2015 - Current: Surrey Rock (No Wave) society IT and Media.
+                                  </br>
+                                •   2015 – Current: Surrey Humanist society secretary.
+                                  </br>
+                                •   2015: Head of graphic design and marketing for ‘No wave Live – The Lagan’ event.
+                                  </br>
+                                •   2014 – 2014: Customer technical support at WDS contracted by Tesco Mobile.
+                                  </br>
+                                •   2012 – 2014: Runner at the Boathouse Restaurant, Christchurch based bar and restaurant.
+                                  </br>
+                                •   2012 – 2013: Junior Android developer at 3SidedCube, Bournemouth based digital media studio. 
+                            </div>
+
+                        </div>
+                        <div class='content' id='education'>
+                            <b>Education and Training</b>
+                            <img src="img_res/arrow_ios7.png" class='arrow' id='ar3'>
+                            </br>
+                             <hr class="fancy-line" id='ln3'></hr>
+                             <div id='education-content'>
+                                •   2014 - Current: Computer Science at the University of Surrey – Expected high 2:1.
+                                </br>
+                                •   2012 – 2014: Student at Bournemouth & Poole College, BTEC Level 3 Diploma in Web and Games technologies – Distinction*, Distinction*, Distinction.
+                                </br>
+                                •   2002 – 2012: Student at St. Peters School GCSE Level studies – Maths (B), ICT (B), English Language (B), and Additional Science (B).
+                            </div>
+
+                        </div>
+                    </div>
+                     <div class='content' id='hobbies'>
+                        <b>Hobbies</b>
+                        <img src="img_res/arrow_ios7.png" class='arrow' id='ar4'>
+                        </br>
+                         <hr class="fancy-line" id='ln4'></hr>
+                         <div id='hobbies-content'>
+                            Hobbies include science, technology, experimenting with different areas of STEM, different programming languages (including C++, Java, and PHP) and researching burgeoning technologies such as Virtual Reality, Brain Computer Interfacing and wearable technology.  I am very interested in getting people passionate about technology. In my spare time, I also enjoy video-games and science fiction books. 
+                            I also trained to assist in the teaching of STEM subjects at local schools which may not have the qualification to teach necessary information. 
+                            My skills in technical fields are supported by my publication history. In early 2013 an article I wrote was published by the Computer Science magazine “cs4fn” or “Computer Science for fun”. 
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+       
+    </body>
+</html>

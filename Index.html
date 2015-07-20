@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <meta name="generator" content="Responsive Web Css (www.responsivewebcss.com)" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="Stylesheet" href="Page 1.css" />
+        <link href='http://fonts.googleapis.com/css?family=Armata' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+        <!-- Google Tag Manager -->
+        <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-TKNVTN"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-TKNVTN');</script>
+        <!-- End Google Tag Manager -->
+        <script type="text/javascript">
+            var fileNumber = Math.floor((Math.random() * 2) + 0); 
+            var body = document.getElementsByTagName('body')[0];
+            body.style.backgroundImage = 'url(img_res/bg-'+fileNumber+'.jpeg)';
+
+           function redirectToCv(){
+                    window.location.replace("Page-cv.htm");
+                }
+            function redirectToLog(){
+                    window.location.replace("Page-blog.php?search=latest");
+                }
+            function redirectToProjects(){
+                    window.location.replace("Page-projects.php?search=latest");
+                }
+            function redirectToHome(){
+                    window.location.replace("Index.html");
+                }
+
+        </script>
+        <div id='root'>        
+            <div class='box' id='box4'>
+                 <div id ='title'>
+                    <p class = 'title'>Charlie Tizzard</p>
+                </div>
+                <div class='box' id='box6'>
+                    <form method="get" action="Page-blog.php?search=latest&" id="tag">
+                        <input name="tag" type="text" size="40" placeholder="Search..." />
+                    </form>
+                    <p class='menu_item' id='item_0' onclick='redirectToCv()' >CV</p>
+                    <p class='menu_item' id='item_1' onclick='redirectToLog()' >Log</p>
+                    <p class='menu_item' id='item_2' onclick='redirectToProjects()' >Projects</p>
+                    <p class='menu_item' id='item_3' onclick='redirectToHome()' >Home</p>
+                </div>
+                <div class='box' id='box8'>
+                    <div class='box' id='profile'>
+                        <p>
+                            Hey, I'm Charlie, this is my web portfolio come blog.
+                            I'm a Computer science student at surrey university, I'm a pretty good Java
+                            and Android programmer as well as web development. </br></br>
+                            I'm currently living in a house with three other students trying while to
+                            start a career as a programmer (that or as an academic).
+                            On this website I'll be publishing my projects, my cv
+                            and writing about what evers on my mind (mostly science, technology, culture and cooking).
+                            
+                            <div id="share-buttons-index">
+                                 <a class='link' href="https://uk.linkedin.com/pub/charles-tizzard/51/912/baa" target="_blank">
+                                        <img src="https://simplesharebuttons.com/images/somacro/linkedin.png" alt="LinkedIn"/>
+                                </a>
+                                 <a class='link' href="https://twitter.com/8BitSensei" target="_blank">
+                                        <img src="https://simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter"/>
+                                </a>
+                                <a class='link' href="https://plus.google.com/u/0/110713077880264500355/posts" target="_blank">
+                                        <img src="https://simplesharebuttons.com/images/somacro/google.png" alt="Google" />
+                                </a>
+                                <a class='link' href="https://github.com/8BitSensei" target="_blank">
+                                        <img src="img_res/git.png" alt="GitHub" />
+                                </a>
+                            </div>
+                        </p>
+                    </div>
+                    <div id = 'right-column'>
+                        <div class='box' id='display'>
+                            <img src="img_res/code.jpg"></img>
+                        </div>
+                        <div class='box' id='twitter'>
+                            <a class="twitter-timeline"  href="https://twitter.com/8BitSensei" data-widget-id="614812726599266305">Tweets by @8BitSensei</a>
+                            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+              
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+       
+    </body>
+</html>

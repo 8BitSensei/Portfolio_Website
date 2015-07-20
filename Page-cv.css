@@ -1,0 +1,70 @@
+
+.content{padding: 10px; margin-top: 20px; float: left; text-align: center; font-family: 'Armata', sans-serif; color: #000;  
+text-shadow: 0 0 4px white;  background-image: url(img_res/06636658.png); border-radius: 5px;}
+
+b.content{
+	margin: 0px;
+	padding: 0px;
+}
+
+#personal-profile{width: 80%; margin-left: 10%; margin-right: 10%; }
+
+#key-skills{width: 80%; margin-left: 10%; margin-right: 10%; margin-bottom: 20px; }
+#right{ width: 45%; float: right; }
+#left{ width: 45%; float: left; }
+#key-skills-content{ display: none; }
+
+#work-education{width: 90%; margin-left: 5%; margin-right: 5%; }
+
+#work{ width: 35%; float left; margin-left: 10%; }
+#work-content{ display: none; }
+
+#education{ width: 35%; float: right; margin-right: 10%; }
+#education-content{ display: none; }
+
+#hobbies{width: 80%; margin-left: 10%; margin-right: 10%;  margin-bottom: 20px; }
+#hobbies-content{ display: none; }
+
+#ln1{ display: none; }
+#ln2{ display: none; }
+#ln3{ display: none; }
+#ln4{ display: none; }
+
+hr.fancy-line { 
+    border: 0; 
+    height: 1px; 
+    margin-top: 10px;
+    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(100,100,100,0.75), rgba(0,0,0,0)); 
+    background-image: -moz-linear-gradient(left, rgba(0,0,0,0), rgba(100,100,100,0.75), rgba(0,0,0,0)); 
+    background-image: -ms-linear-gradient(left, rgba(0,0,0,0), rgba(100,100,100,0.75), rgba(0,0,0,0)); 
+    background-image: -o-linear-gradient(left, rgba(0,0,0,0), rgba(100,100,100,0.75), rgba(0,0,0,0)); 
+    box-shadow: 0px -2px 4px rgba(136,136,136,0.75);
+}
+
+.arrow{
+	 	-moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
+        height: 25px;
+        float: right;
+
+}
+
+.rotated-up {
+  transform: rotate(180deg);
+  -ms-transform: rotate(180deg); /* IE 9 */
+  -moz-transform: rotate(180deg); /* Firefox */
+  -webkit-transform: rotate(180deg); /* Safari and Chrome */
+  -o-transform: rotate(180deg); /* Opera */
+}
+
+.rotated-down {
+  transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg); /* IE 9 */
+  -moz-transform: rotate(-90deg); /* Firefox */
+  -webkit-transform: rotate(-90deg); /* Safari and Chrome */
+  -o-transform: rotate(-90deg); /* Opera */
+}
