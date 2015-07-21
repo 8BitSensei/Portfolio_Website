@@ -13,4 +13,6 @@
 #art-title:hover{ border-bottom: 1px solid rgba(40,171,227,1); }
 #art-details{ font-size: 14px; margin-top: 10px; }
 #art-content{ font-size: 14px; margin-top: 30px; }
+#views{ float: right; width: 60%; height: 50px; padding-top: 8px; font-size: 22px; }
+
 

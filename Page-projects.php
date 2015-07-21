@@ -1,7 +1,7 @@
 <?php
 
    include('includes/connect.php');
-
+   include_once("includes/analyticstracking.php");
  
 
     class ListObject {

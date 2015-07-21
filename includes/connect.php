@@ -90,5 +90,13 @@
 			}
 			return $return_array;
         }
+
+        function addView($id, $table){
+        	$article = $this->getById($id, $table);
+        	$views = $article[0]['views'];
+        	$views = $views+1;
+        	$sql = "UPDATE `$table` SET `views`=$views WHERE `id`=$id";
+        	mysqli_query($this->connect, $sql);   	
+        }
     }
 ?>

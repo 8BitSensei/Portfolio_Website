@@ -1,6 +1,8 @@
 <?php
 
 	 include('includes/connect.php');
+     include_once("includes/analyticstracking.php");
+
 	 $interface = new databaseInterface();
 
 	 if(isset($_GET['art_id'])){
@@ -20,6 +22,7 @@
 
 	 	$article = $interface->getById($art_id, $typ);
 	 	$tags_array = explode(":",$article[0]["tags"]);
+        $interface->addView($art_id, $typ);
 	 }
      if(isset($_GET['typ'])){
         $typ = htmlspecialchars($_GET['typ']);
@@ -124,12 +127,13 @@
 							    </a>
 							     
 							    <!-- Twitter -->
-							    <a href="https://twitter.com/share?url='.$link.'&amp;name='.$article[0]['title'].'&amp;" target="_blank">
+							    <a class="link" href="https://twitter.com/share?url='.$link.'&amp;name='.$article[0]['title'].'&amp;" target="_blank">
 							        <img src="https://simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" />
 							    </a>
-							    </br>
-                				</br>
-							</div>';
+							</div>
+                            <div id="views">
+                            <b> - '.$article[0]['views'].' Views </b>
+                            </div>';
                 			?>
                 			
                 		</div>
