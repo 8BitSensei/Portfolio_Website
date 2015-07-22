@@ -38,10 +38,25 @@
         <title></title>
         <meta name="generator" content="Responsive Web Css (www.responsivewebcss.com)" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="<?php echo($article[0]['description']) ?>s">
+        <meta name="keywords" content="<?php  foreach ($tags_array as $key) { echo$key.','; } ?>">
+        <meta name="author" content="<?php echo($article[0]['author']) ?>">
+
+        <meta property="og:title" content="<?php echo($article[0]['title']) ?>"/>
+        <meta property="og:description" content="<?php echo($article[0]['description']) ?>"/>
+        <meta property="og:type" content="article"/>
+        <meta property="og:image" content="img_res/logo_c.png"/>
+        <meta property="og:url" content="http://www.charlietizzard.co.uk"/>
+
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:title" content="<?php echo($article[0]['title']) ?>">
+        <meta name="twitter:description" content="<?php echo($article[0]['description']) ?>"/>
+
         <link rel="Stylesheet" href="Page 1.css" />
         <link rel="Stylesheet" href="Page-article.css" />
         <link href='http://fonts.googleapis.com/css?family=Armata' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+
     </head>
     <body>
         <script type="text/javascript">

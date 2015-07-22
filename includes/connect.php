@@ -5,7 +5,7 @@
         public $connect;
 
          public function __construct() {
-            $this->connect = mysqli_connect('localhost','root','', 'personal-website');
+            $this->connect = mysqli_connect('host','user','password', 'database');
 
 			if (mysqli_connect_errno()){
 			  	echo "Failed to connect to MySQL: " . mysqli_connect_error();
